@@ -5,7 +5,7 @@ pipeline {
             parallel {
                 stage('Test On Windows') {
                     steps {
-                        echo "on windows"
+                        echo "on W"
                     }
                     post {
                         always {
@@ -19,7 +19,7 @@ pipeline {
                     }
                     post {
                         always {
-                            echo "post"
+                            echo "exit from pipeline"
                         }
                     }
                 }
