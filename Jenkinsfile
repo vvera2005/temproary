@@ -19,7 +19,7 @@ pipeline {
                     }
                     post {
                         always {
-                            echo "exit from pipeline"
+                            echo "exit from pipeline nnnn"
                         }
                     }
                 }
