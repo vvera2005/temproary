@@ -3,7 +3,7 @@ pipeline {
   triggers {
     GenericTrigger(
      genericVariables: [
-      [key: 'branch', value: '$.ref']
+      [key: 'ref', value: '$.ref']
      ],
      causeString: 'Triggered on $ref',
      regexpFilterExpression: '',
@@ -15,7 +15,7 @@ pipeline {
   stages {
     stage('Some step') {
       steps {
-        sh "echo $branch"
+        sh "echo $ref"
       }
     }
   }
