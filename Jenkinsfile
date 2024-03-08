@@ -14,7 +14,7 @@ pipeline {
         stage('Build') {
             when {
                 expression {
-                    params.ref == 'refs/heads/main'
+                    params.ref == 'refs/remotes/origin/main'
                 }
             }
             steps {
