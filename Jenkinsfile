@@ -11,10 +11,16 @@ pipeline {
     }
     
     stages {
+        stage('Debug') {
+            steps {
+                echo "Ref: ${params.ref}"
+            }
+        }
+        
         stage('Build') {
             when {
                 expression {
-                    genericVariables.ref == 'refs/heads/main'
+                    params.ref == 'refs/heads/main'
                 }
             }
             steps {
