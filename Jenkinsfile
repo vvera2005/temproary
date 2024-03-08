@@ -4,7 +4,7 @@ pipeline {
     triggers {
         GenericTrigger(
             genericVariables: [
-                [key: 'ref', value: '$.ref']
+                [key: 'ref', value: '$1376abc6-dd36-11ee-8272-2c6ad7275de6.ref']
             ],
             causeString: 'GitHub Push Event'
         )
